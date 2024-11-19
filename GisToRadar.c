@@ -3,12 +3,7 @@
 #include <math.h>
 #include "prototypes.h"
 
-int main(int argc, char **argv)
-{
-    return 0;
-}
-
-const double g_EarthRadius = 6371000;
+const double g_EarthRadius = 6371;
 
 const int SUCCESS = 0;
 
@@ -52,7 +47,7 @@ int GIStoRadar(double *range,
     return SUCCESS;
 }
 
-int RadartoGis(double range,
+int RadartoGIS(double range,
                double bearing,
                double  glonInit,
                double  glatInit,
