@@ -59,8 +59,8 @@ int RadartoGIS(double range,
 
     double delta = range / g_EarthRadius;   // Central angle along great circle
 
-    double phi_init = radian(glatInit),
-           phi_final = asin( sin(phi_init) * cos(delta) + cos(phi_init) * sin(delta) * cos(delta));
+    double phi_init = radian(glatInit), bearad = radian(bearing),
+           phi_final = asin( sin(phi_init) * cos(delta) + cos(phi_init) * sin(delta) * cos(bearad));
 
     *glatFinal = degree( phi_final );
 

@@ -161,7 +161,7 @@ int main(int argc, char *argv[])
                 vm.count("end-longitude")   != 1
             )
             {
-                cout << "Incorrect parameters for " << command;
+                cout << "Incorrect parameters for " << command << endl;
                 return -1;
             }
 
@@ -182,7 +182,7 @@ int main(int argc, char *argv[])
                 vm.count("range")           != 1
             )
             {
-                cout << "Incorrect parameters for " << command;
+                cout << "Incorrect parameters for " << command << endl;
                 return -1;
             }
 
